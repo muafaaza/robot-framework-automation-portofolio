@@ -1,11 +1,28 @@
 # robot-framework-automation-portfolio
 
-This repository contains my portfolio of automation scripts for web, iOS, Android, and API testing. It showcases practical implementations across multiple platforms, demonstrating expertise in building robust, maintainable, and efficient automation solutions.
+A complete cross-platform automation portfolio demonstrating practical scripts for **Web, iOS, Android, and API testing**. This repository showcases my ability to create robust, maintainable, and efficient automation solutions that mirror real-world testing scenarios.
 
-Specifically, it includes:
+### Platforms and Open-Source Integrations
+
+Automation scripts leverage multiple platforms and open-source tools:
 
 - **Web automation** using **OrangeHRM**  
 - **iOS and Android automation** via **Sauce Labs**  
 - **API automation** with **Reqres.in**  
 
-These scripts highlight my ability to design scalable, cross-platform automation solutions inspired by real-world open-source platforms.
+### Key Features
+
+- **BDD-style test implementation** for clear, human-readable, and maintainable scenarios  
+- **Test data management** with Excel for easy configuration and scalable, data-driven testing  
+- **Reporting** in both **PDF** and **Excel** formats, offering detailed and professional test results  
+
+### Highlights
+
+Through this portfolio, I demonstrate my capability to:
+
+- Design **scalable cross-platform automation solutions**  
+- Implement **data-driven testing** for flexibility and maintainability  
+- Generate **comprehensive, exportable reports** for analysis and decision-making  
+- Leverage **real-world open-source platforms** for hands-on automation experience  
+
+This repository serves as both a **showcase of my work** and a **reference for best practices in automation** across multiple platforms and technologies.
