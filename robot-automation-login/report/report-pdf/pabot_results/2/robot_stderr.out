@@ -1,0 +1,38 @@
+[ ERROR ] Error in file '/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/keywords/keywords_ios.robot' on line 4: Processing variable file '/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/resource/variable/variable_mobile.py' failed: Importing variable file '/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/resource/variable/variable_mobile.py' failed: FileNotFoundError: [Errno 2] No such file or directory: 'robot-automation-login/resource/testdata/testdata_mobile.xlsx'
+Traceback (most recent call last):
+  File "/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/resource/variable/variable_mobile.py", line 4, in <module>
+    wb = load_workbook(filename=FILE_PATH, data_only=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/site-packages/openpyxl/reader/excel.py", line 344, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/site-packages/openpyxl/reader/excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/site-packages/openpyxl/reader/excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/zipfile/__init__.py", line 1321, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+PYTHONPATH:
+  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/resource/variable
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/bin
+  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login
+  /Users/muafailhamighazalah/Desktop/robot-framework-automation-portofolio/robot-automation-login
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python312.zip
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/lib-dynload
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/site-packages
+[ WARN ] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1043770e0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session
+[ WARN ] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10417d730>: Failed to establish a new connection: [Errno 61] Connection refused')': /session
+[ WARN ] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x104475820>: Failed to establish a new connection: [Errno 61] Connection refused')': /session
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: No application is open
+[ WARN ] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10454c350>: Failed to establish a new connection: [Errno 61] Connection refused')': /session
+[ WARN ] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10454c5c0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session
+[ WARN ] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10454c7d0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: No application is open
+[ WARN ] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x104477ec0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session
+[ WARN ] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x104477bf0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session
+[ WARN ] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x104477a70>: Failed to establish a new connection: [Errno 61] Connection refused')': /session
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: No application is open

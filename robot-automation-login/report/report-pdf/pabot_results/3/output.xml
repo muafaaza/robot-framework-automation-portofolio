@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on darwin)" generated="2025-09-30T22:45:10.566016" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcase" source="/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase">
+<suite id="s1-s1" name="Web" source="/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase/web.robot">
+<test id="s1-s1-t1" name="User Login Web" line="7">
+<kw name="given Open OrangeHRM Web" owner="setup_web">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-30T22:45:11.112416" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${link}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-30T22:45:11.112277" elapsed="16.088147"/>
+</kw>
+<status status="PASS" start="2025-09-30T22:45:11.112075" elapsed="16.089013"/>
+</kw>
+<kw name="when Enter Username" owner="keywords_web">
+<kw name="Update Status excel" owner="GlobalWeb">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-09-30T22:45:27.207268" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.210)
+Stacktrace:
+0   chromedriver                        0x00000001012a7274 cxxbridge1$str$ptr + 2882596
+1   chromedriver                        0x000000010129f1a0 cxxbridge1$str$ptr + 2849616
+2   chromedriver                        0x0000000100dc9180 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73420
+3   chromedriver                        0x0000000100da3158 chromedriver + 143704
+4   chromedriver                        0x0000000100e38560 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 529068
+5   chromedriver                        0x0000000100e51228 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630644
+6   chromedriver                        0x0000000100e04188 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 315092
+7   chromedriver                        0x000000010126ac54 cxxbridge1$str$ptr + 2635268
+8   chromedriver                        0x000000010126de6c cxxbridge1$str$ptr + 2648092
+9   chromedriver                        0x000000010124c5d4 cxxbridge1$str$ptr + 2510724
+10  chromedriver                        0x000000010126e718 cxxbridge1$str$ptr + 2650312
+11  chromedriver                        0x000000010123dd7c cxxbridge1$str$ptr + 2451244
+12  chromedriver                        0x000000010128ddd4 cxxbridge1$str$ptr + 2779012
+13  chromedriver                        0x000000010128df54 cxxbridge1$str$ptr + 2779396
+14  chromedriver                        0x000000010129edec cxxbridge1$str$ptr + 2848668
+15  libsystem_pthread.dylib             0x0000000183237c0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x0000000183232b80 thread_start + 8
+</msg>
+<msg time="2025-09-30T22:45:27.207867" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.210)
+Stacktrace:
+0   chromedriver                        0x00000001012a7274 cxxbridge1$str$ptr + 2882596
+1   chromedriver                        0x000000010129f1a0 cxxbridge1$str$ptr + 2849616
+2   chromedriver                        0x0000000100dc9180 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73420
+3   chromedriver                        0x0000000100da3158 chromedriver + 143704
+4   chromedriver                        0x0000000100e38560 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 529068
+5   chromedriver                        0x0000000100e51228 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630644
+6   chromedriver                        0x0000000100e04188 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 315092
+7   chromedriver                        0x000000010126ac54 cxxbridge1$str$ptr + 2635268
+8   chromedriver                        0x000000010126de6c cxxbridge1$str$ptr + 2648092
+9   chromedriver                        0x000000010124c5d4 cxxbridge1$str$ptr + 2510724
+10  chromedriver                        0x000000010126e718 cxxbridge1$str$ptr + 2650312
+11  chromedriver                        0x000000010123dd7c cxxbridge1$str$ptr + 2451244
+12  chromedriver                        0x000000010128ddd4 cxxbridge1$str$ptr + 2779012
+13  chromedriver                        0x000000010128df54 cxxbridge1$str$ptr + 2779396
+14  chromedriver                        0x000000010129edec cxxbridge1$str$ptr + 2848668
+15  libsystem_pthread.dylib             0x0000000183237c0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x0000000183232b80 thread_start + 8
+</msg>
+<arg>${element_visible}</arg>
+<arg>timeout=50s</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-09-30T22:45:27.203931" elapsed="0.008723">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.210)
+Stacktrace:
+0   chromedriver                        0x00000001012a7274 cxxbridge1$str$ptr + 2882596
+1   chromedriver                        0x000000010129f1a0 cxxbridge1$str$ptr + 2849616
+2   chromedriver                        0x0000000100dc9180 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73420
+3   chromedriver                        0x0000000100da3158 chromedriver + 143704
+4   chromedriver                        0x0000000100e38560 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 529068
+5   chromedriver                        0x0000000100e51228 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630644
+6   chromedriver                        0x0000000100e04188 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 315092
+7   chromedriver                        0x000000010126ac54 cxxbridge1$str$ptr + 2635268
+8   chromedriver                        0x000000010126de6c cxxbridge1$str$ptr + 2648092
+9   chromedriver                        0x000000010124c5d4 cxxbridge1$str$ptr + 2510724
+10  chromedriver                        0x000000010126e718 cxxbridge1$str$ptr + 2650312
+11  chromedriver                        0x000000010123dd7c cxxbridge1$str$ptr + 2451244
+12  chromedriver                        0x000000010128ddd4 cxxbridge1$str$ptr + 2779012
+13  chromedriver                        0x000000010128df54 cxxbridge1$str$ptr + 2779396
+14  chromedriver                        0x000000010129edec cxxbridge1$str$ptr + 2848668
+15  libsystem_pthread.dylib             0x0000000183237c0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x0000000183232b80 thread_start + 8
+</status>
+</kw>
+<msg time="2025-09-30T22:45:27.212872" level="INFO">${page_visible} = False</msg>
+<var>${page_visible}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${element_visible}</arg>
+<arg>timeout=50s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-09-30T22:45:27.203568" elapsed="0.009338"/>
+</kw>
+<if>
+<branch type="IF" condition="${page_visible}">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${a}</var>
+<arg>PASSED</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-09-30T22:45:27.213347" elapsed="0.000057"/>
+</kw>
+<kw name="Status" owner="GlobalReport">
+<arg>${row}</arg>
+<arg>${a}</arg>
+<status status="NOT RUN" start="2025-09-30T22:45:27.213516" elapsed="0.000048"/>
+</kw>
+<status status="NOT RUN" start="2025-09-30T22:45:27.213046" elapsed="0.000599"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-30T22:45:27.214223" level="INFO">${a} = FAILED</msg>
+<var>${a}</var>
+<arg>FAILED</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-30T22:45:27.213947" elapsed="0.000306"/>
+</kw>
+<kw name="Status" owner="GlobalReport">
+<arg>${row}</arg>
+<arg>${a}</arg>
+<status status="PASS" start="2025-09-30T22:45:27.214527" elapsed="0.026026"/>
+</kw>
+<status status="PASS" start="2025-09-30T22:45:27.213769" elapsed="0.026877"/>
+</branch>
+<status status="PASS" start="2025-09-30T22:45:27.213012" elapsed="0.027681"/>
+</if>
+<arg>${TEXT_USERNAME}</arg>
+<arg>2</arg>
+<status status="PASS" start="2025-09-30T22:45:27.202864" elapsed="0.037890"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-09-30T22:45:27.242711" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.210)
+Stacktrace:
+0   chromedriver                        0x00000001012a7274 cxxbridge1$str$ptr + 2882596
+1   chromedriver                        0x000000010129f1a0 cxxbridge1$str$ptr + 2849616
+2   chromedriver                        0x0000000100dc9180 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73420
+3   chromedriver                        0x0000000100da3158 chromedriver + 143704
+4   chromedriver                        0x0000000100e38560 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 529068
+5   chromedriver                        0x0000000100e51228 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630644
+6   chromedriver                        0x0000000100e04188 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 315092
+7   chromedriver                        0x000000010126ac54 cxxbridge1$str$ptr + 2635268
+8   chromedriver                        0x000000010126de6c cxxbridge1$str$ptr + 2648092
+9   chromedriver                        0x000000010124c5d4 cxxbridge1$str$ptr + 2510724
+10  chromedriver                        0x000000010126e718 cxxbridge1$str$ptr + 2650312
+11  chromedriver                        0x000000010123dd7c cxxbridge1$str$ptr + 2451244
+12  chromedriver                        0x000000010128ddd4 cxxbridge1$str$ptr + 2779012
+13  chromedriver                        0x000000010128df54 cxxbridge1$str$ptr + 2779396
+14  chromedriver                        0x000000010129edec cxxbridge1$str$ptr + 2848668
+15  libsystem_pthread.dylib             0x0000000183237c0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x0000000183232b80 thread_start + 8
+</msg>
+<msg time="2025-09-30T22:45:27.242895" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.210)
+Stacktrace:
+0   chromedriver                        0x00000001012a7274 cxxbridge1$str$ptr + 2882596
+1   chromedriver                        0x000000010129f1a0 cxxbridge1$str$ptr + 2849616
+2   chromedriver                        0x0000000100dc9180 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73420
+3   chromedriver                        0x0000000100da3158 chromedriver + 143704
+4   chromedriver                        0x0000000100e38560 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 529068
+5   chromedriver                        0x0000000100e51228 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630644
+6   chromedriver                        0x0000000100e04188 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 315092
+7   chromedriver                        0x000000010126ac54 cxxbridge1$str$ptr + 2635268
+8   chromedriver                        0x000000010126de6c cxxbridge1$str$ptr + 2648092
+9   chromedriver                        0x000000010124c5d4 cxxbridge1$str$ptr + 2510724
+10  chromedriver                        0x000000010126e718 cxxbridge1$str$ptr + 2650312
+11  chromedriver                        0x000000010123dd7c cxxbridge1$str$ptr + 2451244
+12  chromedriver                        0x000000010128ddd4 cxxbridge1$str$ptr + 2779012
+13  chromedriver                        0x000000010128df54 cxxbridge1$str$ptr + 2779396
+14  chromedriver                        0x000000010129edec cxxbridge1$str$ptr + 2848668
+15  libsystem_pthread.dylib             0x0000000183237c0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x0000000183232b80 thread_start + 8
+</msg>
+<arg>${TEXT_USERNAME}</arg>
+<arg>timeout=100s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-09-30T22:45:27.240901" elapsed="0.003138">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.210)
+Stacktrace:
+0   chromedriver                        0x00000001012a7274 cxxbridge1$str$ptr + 2882596
+1   chromedriver                        0x000000010129f1a0 cxxbridge1$str$ptr + 2849616
+2   chromedriver                        0x0000000100dc9180 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73420
+3   chromedriver                        0x0000000100da3158 chromedriver + 143704
+4   chromedriver                        0x0000000100e38560 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 529068
+5   chromedriver                        0x0000000100e51228 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630644
+6   chromedriver                        0x0000000100e04188 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 315092
+7   chromedriver                        0x000000010126ac54 cxxbridge1$str$ptr + 2635268
+8   chromedriver                        0x000000010126de6c cxxbridge1$str$ptr + 2648092
+9   chromedriver                        0x000000010124c5d4 cxxbridge1$str$ptr + 2510724
+10  chromedriver                        0x000000010126e718 cxxbridge1$str$ptr + 2650312
+11  chromedriver                        0x000000010123dd7c cxxbridge1$str$ptr + 2451244
+12  chromedriver                        0x000000010128ddd4 cxxbridge1$str$ptr + 2779012
+13  chromedriver                        0x000000010128df54 cxxbridge1$str$ptr + 2779396
+14  chromedriver                        0x000000010129edec cxxbridge1$str$ptr + 2848668
+15  libsystem_pthread.dylib             0x0000000183237c0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x0000000183232b80 thread_start + 8
+</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${TEXT_USERNAME}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-30T22:45:27.244296" elapsed="0.000061"/>
+</kw>
+<status status="FAIL" start="2025-09-30T22:45:27.202084" elapsed="0.042407">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.210)
+Stacktrace:
+0   chromedriver                        0x00000001012a7274 cxxbridge1$str$ptr + 2882596
+1   chromedriver                        0x000000010129f1a0 cxxbridge1$str$ptr + 2849616
+2   chromedriver                        0x0000000100dc9180 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73420
+3   chromedriver                        0x0000000100da3158 chromedriver + 143704
+4   chromedriver                        0x0000000100e38560 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 529068
+5   chromedriver                        0x0000000100e51228 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630644
+6   chromedriver                        0x0000000100e04188 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 315092
+7   chromedriver                        0x000000010126ac54 cxxbridge1$str$ptr + 2635268
+8   chromedriver                        0x000000010126de6c cxxbridge1$str$ptr + 2648092
+9   chromedriver                        0x000000010124c5d4 cxxbridge1$str$ptr + 2510724
+10  chromedriver                        0x000000010126e718 cxxbridge1$str$ptr + 2650312
+11  chromedriver                        0x000000010123dd7c cxxbridge1$str$ptr + 2451244
+12  chromedriver                        0x000000010128ddd4 cxxbridge1$str$ptr + 2779012
+13  chromedriver                        0x000000010128df54 cxxbridge1$str$ptr + 2779396
+14  chromedriver                        0x000000010129edec cxxbridge1$str$ptr + 2848668
+15  libsystem_pthread.dylib             0x0000000183237c0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x0000000183232b80 thread_start + 8
+</status>
+</kw>
+<kw name="and Enter Password" owner="keywords_web">
+<status status="NOT RUN" start="2025-09-30T22:45:27.244704" elapsed="0.000044"/>
+</kw>
+<kw name="and Click Login" owner="keywords_web">
+<status status="NOT RUN" start="2025-09-30T22:45:27.244861" elapsed="0.000034"/>
+</kw>
+<kw name="then Validate Login Successs" owner="keywords_web">
+<status status="NOT RUN" start="2025-09-30T22:45:27.244997" elapsed="0.000032"/>
+</kw>
+<kw name="and Close OrangeHRM Web" owner="setup_web">
+<status status="NOT RUN" start="2025-09-30T22:45:27.245122" elapsed="0.000030"/>
+</kw>
+<tag>login-web</tag>
+<status status="FAIL" start="2025-09-30T22:45:11.111490" elapsed="16.133786">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.210)
+Stacktrace:
+0   chromedriver                        0x00000001012a7274 cxxbridge1$str$ptr + 2882596
+1   chromedriver                        0x000000010129f1a0 cxxbridge1$str$ptr + 2849616
+2   chromedriver                        0x0000000100dc9180 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73420
+3   chromedriver                        0x0000000100da3158 chromedriver + 143704
+4   chromedriver                        0x0000000100e38560 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 529068
+5   chromedriver                        0x0000000100e51228 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630644
+6   chromedriver                        0x0000000100e04188 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 315092
+7   chromedriver                        0x000000010126ac54 cxxbridge1$str$ptr + 2635268
+8   chromedriver                        0x000000010126de6c cxxbridge1$str$ptr + 2648092
+9   chromedriver                        0x000000010124c5d4 cxxbridge1$str$ptr + 2510724
+10  chromedriver                        0x000000010126e718 cxxbridge1$str$ptr + 2650312
+11  chromedriver                        0x000000010123dd7c cxxbridge1$str$ptr + 2451244
+12  chromedriver                        0x000000010128ddd4 cxxbridge1$str$ptr + 2779012
+13  chromedriver                        0x000000010128df54 cxxbridge1$str$ptr + 2779396
+14  chromedriver                        0x000000010129edec cxxbridge1$str$ptr + 2848668
+15  libsystem_pthread.dylib             0x0000000183237c0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x0000000183232b80 thread_start + 8
+</status>
+</test>
+<test id="s1-s1-t2" name="User Login (false username) Web" line="16">
+<kw name="given Open OrangeHRM Web chromeless" owner="setup_web">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-30T22:45:27.246338" level="INFO">Opening browser 'headlesschrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2025-09-30T22:45:29.597532" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1067c9e50&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session/3ae3443bf10f72d29869ee9b4f2d6118/screenshot</msg>
+<msg time="2025-09-30T22:45:29.599594" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1067c9f40&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session/3ae3443bf10f72d29869ee9b4f2d6118/screenshot</msg>
+<msg time="2025-09-30T22:45:29.601619" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1067c96a0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session/3ae3443bf10f72d29869ee9b4f2d6118/screenshot</msg>
+<msg time="2025-09-30T22:45:29.603005" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=51131): Max retries exceeded with url: /session/3ae3443bf10f72d29869ee9b4f2d6118/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1067c9370&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+<arg>${link}</arg>
+<arg>${browser_head_less}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-09-30T22:45:27.246174" elapsed="2.357241">Execution terminated by signal</status>
+</kw>
+<status status="FAIL" start="2025-09-30T22:45:27.245962" elapsed="2.357989">Execution terminated by signal</status>
+</kw>
+<kw name="when Enter Password" owner="keywords_web">
+<status status="NOT RUN" start="2025-09-30T22:45:29.604524" elapsed="0.000175"/>
+</kw>
+<kw name="and Enter False Username" owner="keywords_web">
+<status status="NOT RUN" start="2025-09-30T22:45:29.604928" elapsed="0.000064"/>
+</kw>
+<kw name="and Click Login" owner="keywords_web">
+<status status="NOT RUN" start="2025-09-30T22:45:29.605578" elapsed="0.000141"/>
+</kw>
+<kw name="and Close OrangeHRM Web" owner="setup_web">
+<status status="NOT RUN" start="2025-09-30T22:45:29.606286" elapsed="0.000086"/>
+</kw>
+<tag>login-false-username-web</tag>
+<status status="FAIL" start="2025-09-30T22:45:27.245643" elapsed="2.360984">Execution terminated by signal</status>
+</test>
+<test id="s1-s1-t3" name="User Login (false password) Web" line="24">
+<tag>login-false-passsword-web</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-09-30T22:45:29.607309" elapsed="0.000613">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" start="2025-09-30T22:45:10.576404" elapsed="19.032099"/>
+</suite>
+<status status="FAIL" start="2025-09-30T22:45:10.570107" elapsed="19.039367"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+<stat pass="0" fail="1" skip="0">login-false-passsword-web</stat>
+<stat pass="0" fail="1" skip="0">login-false-username-web</stat>
+<stat pass="0" fail="1" skip="0">login-web</stat>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Testcase">Testcase</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s1" name="Web">Testcase.Web</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-09-30T22:45:11.105381" level="ERROR">Error in file '/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/keywords/keywords_web.robot' on line 4: Processing variable file '/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/resource/variable/variable_web.py' failed: Importing variable file '/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/resource/variable/variable_web.py' failed: FileNotFoundError: [Errno 2] No such file or directory: 'robot-automation-login/resource/testdata/testdata_web.xlsx'
+Traceback (most recent call last):
+  File "/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/resource/variable/variable_web.py", line 4, in &lt;module&gt;
+    wb = load_workbook(filename=FILE_PATH, data_only=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/site-packages/openpyxl/reader/excel.py", line 344, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/site-packages/openpyxl/reader/excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/site-packages/openpyxl/reader/excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/zipfile/__init__.py", line 1321, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+PYTHONPATH:
+  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/resource/variable
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/bin
+  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login
+  /Users/muafailhamighazalah/Desktop/robot-framework-automation-portofolio/robot-automation-login
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python312.zip
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/lib-dynload
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/site-packages</msg>
+<msg time="2025-09-30T22:45:27.207268" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.210)
+Stacktrace:
+0   chromedriver                        0x00000001012a7274 cxxbridge1$str$ptr + 2882596
+1   chromedriver                        0x000000010129f1a0 cxxbridge1$str$ptr + 2849616
+2   chromedriver                        0x0000000100dc9180 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73420
+3   chromedriver                        0x0000000100da3158 chromedriver + 143704
+4   chromedriver                        0x0000000100e38560 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 529068
+5   chromedriver                        0x0000000100e51228 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630644
+6   chromedriver                        0x0000000100e04188 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 315092
+7   chromedriver                        0x000000010126ac54 cxxbridge1$str$ptr + 2635268
+8   chromedriver                        0x000000010126de6c cxxbridge1$str$ptr + 2648092
+9   chromedriver                        0x000000010124c5d4 cxxbridge1$str$ptr + 2510724
+10  chromedriver                        0x000000010126e718 cxxbridge1$str$ptr + 2650312
+11  chromedriver                        0x000000010123dd7c cxxbridge1$str$ptr + 2451244
+12  chromedriver                        0x000000010128ddd4 cxxbridge1$str$ptr + 2779012
+13  chromedriver                        0x000000010128df54 cxxbridge1$str$ptr + 2779396
+14  chromedriver                        0x000000010129edec cxxbridge1$str$ptr + 2848668
+15  libsystem_pthread.dylib             0x0000000183237c0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x0000000183232b80 thread_start + 8
+</msg>
+<msg time="2025-09-30T22:45:27.242711" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.210)
+Stacktrace:
+0   chromedriver                        0x00000001012a7274 cxxbridge1$str$ptr + 2882596
+1   chromedriver                        0x000000010129f1a0 cxxbridge1$str$ptr + 2849616
+2   chromedriver                        0x0000000100dc9180 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73420
+3   chromedriver                        0x0000000100da3158 chromedriver + 143704
+4   chromedriver                        0x0000000100e38560 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 529068
+5   chromedriver                        0x0000000100e51228 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630644
+6   chromedriver                        0x0000000100e04188 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 315092
+7   chromedriver                        0x000000010126ac54 cxxbridge1$str$ptr + 2635268
+8   chromedriver                        0x000000010126de6c cxxbridge1$str$ptr + 2648092
+9   chromedriver                        0x000000010124c5d4 cxxbridge1$str$ptr + 2510724
+10  chromedriver                        0x000000010126e718 cxxbridge1$str$ptr + 2650312
+11  chromedriver                        0x000000010123dd7c cxxbridge1$str$ptr + 2451244
+12  chromedriver                        0x000000010128ddd4 cxxbridge1$str$ptr + 2779012
+13  chromedriver                        0x000000010128df54 cxxbridge1$str$ptr + 2779396
+14  chromedriver                        0x000000010129edec cxxbridge1$str$ptr + 2848668
+15  libsystem_pthread.dylib             0x0000000183237c0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x0000000183232b80 thread_start + 8
+</msg>
+<msg time="2025-09-30T22:45:29.597532" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1067c9e50&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session/3ae3443bf10f72d29869ee9b4f2d6118/screenshot</msg>
+<msg time="2025-09-30T22:45:29.599594" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1067c9f40&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session/3ae3443bf10f72d29869ee9b4f2d6118/screenshot</msg>
+<msg time="2025-09-30T22:45:29.601619" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1067c96a0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session/3ae3443bf10f72d29869ee9b4f2d6118/screenshot</msg>
+<msg time="2025-09-30T22:45:29.603005" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=51131): Max retries exceeded with url: /session/3ae3443bf10f72d29869ee9b4f2d6118/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1067c9370&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+</errors>
+</robot>

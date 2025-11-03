@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on darwin)" generated="2025-09-30T22:45:10.562792" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcase" source="/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase">
+<suite id="s1-s1" name="Api" source="/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase/api.robot">
+<test id="s1-s1-t1" name="User Login Api" line="6">
+<kw name="Login" owner="keyword_api">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-09-30T22:45:11.120819" level="INFO">Creating Session using : alias=login, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>login</arg>
+<arg>${BASE_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-09-30T22:45:11.120705" elapsed="0.000346"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-09-30T22:45:11.121347" level="INFO">&amp;{headers} = { Content-Type=application/json | x-api-key=reqres-free-v1 }</msg>
+<var>&amp;{headers}</var>
+<arg>Content-Type=${APPLICATION}</arg>
+<arg>x-api-key=${API_KEY}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-09-30T22:45:11.121142" elapsed="0.000222"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-09-30T22:45:11.121922" level="FAIL">Variable '${username}' not found.</msg>
+<var>&amp;{body}</var>
+<arg>email=${username}</arg>
+<arg>password=${password}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="FAIL" start="2025-09-30T22:45:11.121433" elapsed="0.000511">Variable '${username}' not found.</status>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<var>${response}</var>
+<arg>login</arg>
+<arg>${LOGIN_ENDPOINT}</arg>
+<arg>json=${body}</arg>
+<arg>headers=${headers}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="NOT RUN" start="2025-09-30T22:45:11.122603" elapsed="0.000031"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2025-09-30T22:45:11.122759" elapsed="0.000020"/>
+</kw>
+<kw name="Status" owner="GlobalReport">
+<arg>5</arg>
+<arg>PASSED</arg>
+<status status="NOT RUN" start="2025-09-30T22:45:11.122824" elapsed="0.000018"/>
+</kw>
+<status status="NOT RUN" start="2025-09-30T22:45:11.122699" elapsed="0.000163"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Status" owner="GlobalReport">
+<arg>5</arg>
+<arg>FAILED</arg>
+<status status="NOT RUN" start="2025-09-30T22:45:11.122938" elapsed="0.000017"/>
+</kw>
+<kw name="Pass Execution" owner="BuiltIn">
+<arg>status code: ${response.status_code}</arg>
+<doc>Skips rest of the current test, setup, or teardown with PASS status.</doc>
+<status status="NOT RUN" start="2025-09-30T22:45:11.123001" elapsed="0.000020"/>
+</kw>
+<status status="NOT RUN" start="2025-09-30T22:45:11.122892" elapsed="0.000147"/>
+</branch>
+<status status="NOT RUN" start="2025-09-30T22:45:11.122673" elapsed="0.000390"/>
+</try>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${token}</var>
+<arg>${response.json()['token']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-09-30T22:45:11.123101" elapsed="0.000019"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<arg>${token}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="NOT RUN" start="2025-09-30T22:45:11.123168" elapsed="0.000017"/>
+</kw>
+<status status="FAIL" start="2025-09-30T22:45:11.120401" elapsed="0.002842">Variable '${username}' not found.</status>
+</kw>
+<tag>login-api</tag>
+<status status="FAIL" start="2025-09-30T22:45:11.120032" elapsed="0.003288">Variable '${username}' not found.</status>
+</test>
+<test id="s1-s1-t2" name="User Login (false username) Api" line="10">
+<kw name="Login false username" owner="keyword_api">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-09-30T22:45:11.123847" level="INFO">Creating Session using : alias=login, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>login</arg>
+<arg>${BASE_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-09-30T22:45:11.123775" elapsed="0.000138"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-09-30T22:45:11.124104" level="INFO">&amp;{headers} = { Content-Type=application/json | x-api-key=reqres-free-v1 }</msg>
+<var>&amp;{headers}</var>
+<arg>Content-Type=${APPLICATION}</arg>
+<arg>x-api-key=${API_KEY}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-09-30T22:45:11.123967" elapsed="0.000150"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-09-30T22:45:11.124520" level="FAIL">Variable '${username_false}' not found.</msg>
+<var>&amp;{body}</var>
+<arg>email=${username_false}</arg>
+<arg>password=${password}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="FAIL" start="2025-09-30T22:45:11.124169" elapsed="0.000368">Variable '${username_false}' not found.</status>
+</kw>
+<kw name="Post Request" owner="RequestsLibrary">
+<msg time="2025-09-30T22:45:11.125121" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<var>${response}</var>
+<arg>login</arg>
+<arg>${LOGIN_ENDPOINT}</arg>
+<arg>json=${body}</arg>
+<arg>headers=${headers}</arg>
+<doc>*DEPRECATED* Please use `POST On Session` instead.</doc>
+<status status="NOT RUN" start="2025-09-30T22:45:11.125095" elapsed="0.000067"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${response.status_code}</arg>
+<arg>400</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2025-09-30T22:45:11.125255" elapsed="0.000022"/>
+</kw>
+<kw name="Status" owner="GlobalReport">
+<arg>6</arg>
+<arg>PASSED</arg>
+<status status="NOT RUN" start="2025-09-30T22:45:11.125318" elapsed="0.000018"/>
+</kw>
+<status status="NOT RUN" start="2025-09-30T22:45:11.125208" elapsed="0.000147"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Status" owner="GlobalReport">
+<arg>6</arg>
+<arg>FAILED</arg>
+<status status="NOT RUN" start="2025-09-30T22:45:11.125420" elapsed="0.000016"/>
+</kw>
+<kw name="Pass Execution" owner="BuiltIn">
+<arg>status code: ${response.status_code}</arg>
+<doc>Skips rest of the current test, setup, or teardown with PASS status.</doc>
+<status status="NOT RUN" start="2025-09-30T22:45:11.125477" elapsed="0.000017"/>
+</kw>
+<status status="NOT RUN" start="2025-09-30T22:45:11.125379" elapsed="0.000133"/>
+</branch>
+<status status="NOT RUN" start="2025-09-30T22:45:11.125194" elapsed="0.000338"/>
+</try>
+<status status="FAIL" start="2025-09-30T22:45:11.123659" elapsed="0.001917">Variable '${username_false}' not found.</status>
+</kw>
+<tag>login-false-username-api</tag>
+<status status="FAIL" start="2025-09-30T22:45:11.123445" elapsed="0.002195">Variable '${username_false}' not found.</status>
+</test>
+<status status="FAIL" start="2025-09-30T22:45:10.573368" elapsed="0.552480"/>
+</suite>
+<status status="FAIL" start="2025-09-30T22:45:10.567216" elapsed="0.558886"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">login-api</stat>
+<stat pass="0" fail="1" skip="0">login-false-username-api</stat>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Testcase">Testcase</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1" name="Api">Testcase.Api</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-09-30T22:45:11.118912" level="ERROR">Error in file '/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/keywords/keyword_api.robot' on line 3: Processing variable file '/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/resource/variable/variable_api.py' failed: Importing variable file '/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/resource/variable/variable_api.py' failed: FileNotFoundError: [Errno 2] No such file or directory: 'robot-automation-login/resource/testdata/testdata_api.xlsx'
+Traceback (most recent call last):
+  File "/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/resource/variable/variable_api.py", line 4, in &lt;module&gt;
+    wb = load_workbook(filename=FILE_PATH, data_only=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/site-packages/openpyxl/reader/excel.py", line 344, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/site-packages/openpyxl/reader/excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/site-packages/openpyxl/reader/excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/zipfile/__init__.py", line 1321, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+PYTHONPATH:
+  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/resource/variable
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/bin
+  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login
+  /Users/muafailhamighazalah/Desktop/robot-framework-automation-portofolio/robot-automation-login
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python312.zip
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/lib-dynload
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/site-packages</msg>
+<msg time="2025-09-30T22:45:11.125121" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+</errors>
+</robot>

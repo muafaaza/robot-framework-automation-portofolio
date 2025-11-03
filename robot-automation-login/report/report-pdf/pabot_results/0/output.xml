@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on darwin)" generated="2025-09-30T22:45:10.566018" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcase" source="/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase">
+<suite id="s1-s1" name="Android" source="/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase/android.robot">
+<test id="s1-s1-t1" name="User Login Android" line="7">
+<kw name="given Open Swag Labs Apps Android" owner="setup_android">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-09-30T22:45:11.128815" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x111c42300&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-09-30T22:45:11.129741" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x111c2dc70&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-09-30T22:45:11.130438" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1157a5430&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-09-30T22:45:11.131816" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-09-30T22:45:11.131301" elapsed="0.004397">No application is open</status>
+</kw>
+<msg time="2025-09-30T22:45:11.136570" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-09-30T22:45:11.136691" level="INFO">Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase/android.robot:7
+    T:  User Login Android    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase/android.robot:9
+      given Open Swag Labs Apps Android    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/setup/setup_android.robot:17
+      Open Application    ${APPIUM_SERVER_URL}    platformName=${PLATFORM_NAME}    deviceName=${DEVICE_NAME}    appPackage=${APP_PACKAGE}    automationName=${AUTOMATION_NAME}    appActivity=${APP_ACTIVITY}    noReset=true    wdaLocalPort=${WDA_PORT}
+      |  ${APPIUM_SERVER_URL} = http://127.0.0.1:4723 (str)
+      |  platformName=${PLATFORM_NAME} = platformName=Android (str)
+      |  deviceName=${DEVICE_NAME} = deviceName=emulator-5554 (str)
+      |  appPackage=${APP_PACKAGE} = appPackage=com.swaglabsmobileapp (str)
+      |  automationName=${AUTOMATION_NAME} = automationName=UiAutomator2 (str)
+      |  appActivity=${APP_ACTIVITY} = appActivity=.MainActivity (str)
+      |  wdaLocalPort=${WDA_PORT} = wdaLocalPort=8100 (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/setup/setup_android.robot:17
+      Capture Page Screenshot    
+______________________________________________________________________________</msg>
+<msg time="2025-09-30T22:45:11.136755" level="FAIL">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1157a62d0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+<arg>${APPIUM_SERVER_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>noReset=true</arg>
+<arg>wdaLocalPort=${WDA_PORT}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-09-30T22:45:11.125199" elapsed="0.012799">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1157a62d0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-09-30T22:45:11.138152" elapsed="0.000058"/>
+</kw>
+<status status="FAIL" start="2025-09-30T22:45:11.125021" elapsed="0.013273">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1157a62d0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="when Enter Username" owner="keywords_android">
+<status status="NOT RUN" start="2025-09-30T22:45:11.138442" elapsed="0.000040"/>
+</kw>
+<kw name="and Enter Password" owner="keywords_android">
+<status status="NOT RUN" start="2025-09-30T22:45:11.138572" elapsed="0.000029"/>
+</kw>
+<kw name="and Click Login" owner="keywords_android">
+<status status="NOT RUN" start="2025-09-30T22:45:11.138674" elapsed="0.000020"/>
+</kw>
+<kw name="then Validate Login Successs" owner="keywords_android">
+<status status="NOT RUN" start="2025-09-30T22:45:11.138763" elapsed="0.000874"/>
+</kw>
+<kw name="and Close Swag Labs Apps Android" owner="setup_android">
+<status status="NOT RUN" start="2025-09-30T22:45:11.139742" elapsed="0.000025"/>
+</kw>
+<tag>login-android</tag>
+<status status="FAIL" start="2025-09-30T22:45:11.124450" elapsed="0.015421">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1157a62d0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</test>
+<test id="s1-s1-t2" name="User Login (false username) Android" line="16">
+<kw name="given Open Swag Labs Apps Android" owner="setup_android">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-09-30T22:45:11.142323" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1159800b0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-09-30T22:45:11.143054" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x115980320&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-09-30T22:45:11.143630" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1159804d0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-09-30T22:45:11.145114" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-09-30T22:45:11.144742" elapsed="0.004343">No application is open</status>
+</kw>
+<msg time="2025-09-30T22:45:11.151599" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-09-30T22:45:11.151727" level="INFO">Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase/android.robot:16
+    T:  User Login (false username) Android    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase/android.robot:18
+      given Open Swag Labs Apps Android    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/setup/setup_android.robot:17
+      Open Application    ${APPIUM_SERVER_URL}    platformName=${PLATFORM_NAME}    deviceName=${DEVICE_NAME}    appPackage=${APP_PACKAGE}    automationName=${AUTOMATION_NAME}    appActivity=${APP_ACTIVITY}    noReset=true    wdaLocalPort=${WDA_PORT}
+      |  ${APPIUM_SERVER_URL} = http://127.0.0.1:4723 (str)
+      |  platformName=${PLATFORM_NAME} = platformName=Android (str)
+      |  deviceName=${DEVICE_NAME} = deviceName=emulator-5554 (str)
+      |  appPackage=${APP_PACKAGE} = appPackage=com.swaglabsmobileapp (str)
+      |  automationName=${AUTOMATION_NAME} = automationName=UiAutomator2 (str)
+      |  appActivity=${APP_ACTIVITY} = appActivity=.MainActivity (str)
+      |  wdaLocalPort=${WDA_PORT} = wdaLocalPort=8100 (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/setup/setup_android.robot:17
+      Capture Page Screenshot    
+______________________________________________________________________________</msg>
+<msg time="2025-09-30T22:45:11.151790" level="FAIL">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x111c17c80&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+<arg>${APPIUM_SERVER_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>noReset=true</arg>
+<arg>wdaLocalPort=${WDA_PORT}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-09-30T22:45:11.140482" elapsed="0.012548">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x111c17c80&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-09-30T22:45:11.153154" elapsed="0.000040"/>
+</kw>
+<status status="FAIL" start="2025-09-30T22:45:11.140330" elapsed="0.012928">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x111c17c80&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="when Enter False Username" owner="keywords_android">
+<status status="NOT RUN" start="2025-09-30T22:45:11.153381" elapsed="0.000026"/>
+</kw>
+<kw name="and Enter Password" owner="keywords_android">
+<status status="NOT RUN" start="2025-09-30T22:45:11.153488" elapsed="0.000020"/>
+</kw>
+<kw name="and Click Login" owner="keywords_android">
+<status status="NOT RUN" start="2025-09-30T22:45:11.153576" elapsed="0.000018"/>
+</kw>
+<kw name="then Close Swag Labs Apps Android" owner="setup_android">
+<status status="NOT RUN" start="2025-09-30T22:45:11.153661" elapsed="0.000019"/>
+</kw>
+<tag>login-false-username-android</tag>
+<status status="FAIL" start="2025-09-30T22:45:11.140054" elapsed="0.013702">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x111c17c80&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</test>
+<test id="s1-s1-t3" name="User Login (false password) Android" line="24">
+<kw name="given Open Swag Labs Apps Android" owner="setup_android">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-09-30T22:45:11.155203" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1157a79e0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-09-30T22:45:11.156449" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1157a7c50&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-09-30T22:45:11.157200" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1157a7e30&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-09-30T22:45:11.158234" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-09-30T22:45:11.157841" elapsed="0.004051">No application is open</status>
+</kw>
+<msg time="2025-09-30T22:45:11.164019" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-09-30T22:45:11.164254" level="INFO">Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase/android.robot:24
+    T:  User Login (false password) Android    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase/android.robot:26
+      given Open Swag Labs Apps Android    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/setup/setup_android.robot:17
+      Open Application    ${APPIUM_SERVER_URL}    platformName=${PLATFORM_NAME}    deviceName=${DEVICE_NAME}    appPackage=${APP_PACKAGE}    automationName=${AUTOMATION_NAME}    appActivity=${APP_ACTIVITY}    noReset=true    wdaLocalPort=${WDA_PORT}
+      |  ${APPIUM_SERVER_URL} = http://127.0.0.1:4723 (str)
+      |  platformName=${PLATFORM_NAME} = platformName=Android (str)
+      |  deviceName=${DEVICE_NAME} = deviceName=emulator-5554 (str)
+      |  appPackage=${APP_PACKAGE} = appPackage=com.swaglabsmobileapp (str)
+      |  automationName=${AUTOMATION_NAME} = automationName=UiAutomator2 (str)
+      |  appActivity=${APP_ACTIVITY} = appActivity=.MainActivity (str)
+      |  wdaLocalPort=${WDA_PORT} = wdaLocalPort=8100 (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/setup/setup_android.robot:17
+      Capture Page Screenshot    
+______________________________________________________________________________</msg>
+<msg time="2025-09-30T22:45:11.164492" level="FAIL">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1157a7950&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</msg>
+<arg>${APPIUM_SERVER_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>noReset=true</arg>
+<arg>wdaLocalPort=${WDA_PORT}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-09-30T22:45:11.154197" elapsed="0.013721">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1157a7950&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-09-30T22:45:11.168555" elapsed="0.000127"/>
+</kw>
+<status status="FAIL" start="2025-09-30T22:45:11.154074" elapsed="0.014847">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1157a7950&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</kw>
+<kw name="when Enter Username" owner="keywords_android">
+<status status="NOT RUN" start="2025-09-30T22:45:11.169318" elapsed="0.000075"/>
+</kw>
+<kw name="and Enter False Password" owner="keywords_android">
+<status status="NOT RUN" start="2025-09-30T22:45:11.169606" elapsed="0.000060"/>
+</kw>
+<kw name="and Click Login" owner="keywords_android">
+<status status="NOT RUN" start="2025-09-30T22:45:11.169857" elapsed="0.000055"/>
+</kw>
+<kw name="then Close Swag Labs Apps Android" owner="setup_android">
+<status status="NOT RUN" start="2025-09-30T22:45:11.170098" elapsed="0.000071"/>
+</kw>
+<tag>login-false-passsword-android</tag>
+<status status="FAIL" start="2025-09-30T22:45:11.153884" elapsed="0.016478">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1157a7950&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))</status>
+</test>
+<status status="FAIL" start="2025-09-30T22:45:10.576363" elapsed="0.594748"/>
+</suite>
+<status status="FAIL" start="2025-09-30T22:45:10.570169" elapsed="0.601762"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">login-android</stat>
+<stat pass="0" fail="1" skip="0">login-false-passsword-android</stat>
+<stat pass="0" fail="1" skip="0">login-false-username-android</stat>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Testcase">Testcase</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s1" name="Android">Testcase.Android</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-09-30T22:45:11.115695" level="ERROR">Error in file '/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/keywords/keywords_android.robot' on line 4: Processing variable file '/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/resource/variable/variable_mobile.py' failed: Importing variable file '/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/resource/variable/variable_mobile.py' failed: FileNotFoundError: [Errno 2] No such file or directory: 'robot-automation-login/resource/testdata/testdata_mobile.xlsx'
+Traceback (most recent call last):
+  File "/Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/resource/variable/variable_mobile.py", line 4, in &lt;module&gt;
+    wb = load_workbook(filename=FILE_PATH, data_only=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/site-packages/openpyxl/reader/excel.py", line 344, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/site-packages/openpyxl/reader/excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/site-packages/openpyxl/reader/excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/zipfile/__init__.py", line 1321, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+PYTHONPATH:
+  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/resource/variable
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/bin
+  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login
+  /Users/muafailhamighazalah/Desktop/robot-framework-automation-portofolio/robot-automation-login
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python312.zip
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/lib-dynload
+  /Users/muafailhamighazalah/.pyenv/versions/3.12.1/lib/python3.12/site-packages</msg>
+<msg time="2025-09-30T22:45:11.128815" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x111c42300&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-09-30T22:45:11.129741" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x111c2dc70&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-09-30T22:45:11.130438" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1157a5430&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-09-30T22:45:11.136570" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-09-30T22:45:11.142323" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1159800b0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-09-30T22:45:11.143054" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x115980320&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-09-30T22:45:11.143630" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1159804d0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-09-30T22:45:11.151599" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-09-30T22:45:11.155203" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1157a79e0&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-09-30T22:45:11.156449" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1157a7c50&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-09-30T22:45:11.157200" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x1157a7e30&gt;: Failed to establish a new connection: [Errno 61] Connection refused')': /session</msg>
+<msg time="2025-09-30T22:45:11.164019" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>

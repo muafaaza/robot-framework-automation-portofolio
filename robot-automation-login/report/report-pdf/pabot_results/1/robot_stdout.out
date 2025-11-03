@@ -1,0 +1,46 @@
+==============================================================================
+Testcase                                                                      
+==============================================================================
+Testcase.Api                                                                  
+==============================================================================
+User Login Api                                                          
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase/api.robot:6
+    T:  User Login Api    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase/api.robot:8
+      Login    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/keywords/keyword_api.robot:19
+      Create Dictionary    email=${username}    password=${password}
+      |  email=${username} = <Unable to define variable value>
+      |  password=${password} = <Unable to define variable value>
+______________________________________________________________________________
+| FAIL |
+Variable '${username}' not found.
+------------------------------------------------------------------------------
+User Login (false username) Api                                         
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase/api.robot:10
+    T:  User Login (false username) Api    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase/api.robot:12
+      Login false username    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/keywords/keyword_api.robot:42
+      Create Dictionary    email=${username_false}    password=${password}
+      |  email=${username_false} = <Unable to define variable value>
+      |  password=${password} = <Unable to define variable value>
+______________________________________________________________________________
+| FAIL |
+Variable '${username_false}' not found.
+------------------------------------------------------------------------------
+Testcase.Api                                                          | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Testcase                                                              | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Output:  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/report/report-pdf/pabot_results/1/output.xml

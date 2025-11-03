@@ -1,6 +1,6 @@
 from openpyxl import load_workbook
 
-FILE_PATH = 'resource/testdata/testdata_web.xlsx'
+FILE_PATH = 'robot-automation-login/resource/testdata/testdata_web.xlsx'
 wb = load_workbook(filename=FILE_PATH, data_only=True)
 
 sheet = wb['web']

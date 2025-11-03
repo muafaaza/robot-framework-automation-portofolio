@@ -1,0 +1,68 @@
+==============================================================================
+Testcase                                                                      
+==============================================================================
+Testcase.Web                                                                  
+==============================================================================
+User Login Web                                                          
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase/web.robot:7
+    T:  User Login Web    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase/web.robot:10
+      when Enter Username    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/keywords/keywords_web.robot:10
+      Wait Until Element Is Visible    ${TEXT_USERNAME}    timeout=100s
+      |  ${TEXT_USERNAME} = //*[@name='username'] (str)
+______________________________________________________________________________
+| FAIL |
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.210)
+Stacktrace:
+0   chromedriver                        0x00000001012a7274 cxxbridge1$str$ptr + 2882596
+1   chromedriver                        0x000000010129f1a0 cxxbridge1$str$ptr + 2849616
+2   chromedriver                        0x0000000100dc9180 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 73420
+3   chromedriver                        0x0000000100da3158 chromedriver + 143704
+4   chromedriver                        0x0000000100e38560 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 529068
+5   chromedriver                        0x0000000100e51228 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630644
+6   chromedriver                        0x0000000100e04188 _RNvCslE4myv9Sbr3_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 315092
+7   chromedriver                        0x000000010126ac54 cxxbridge1$str$ptr + 2635268
+8   chromedriver                        0x000000010126de6c cxxbridge1$str$ptr + 2648092
+9   chromedriver                        0x000000010124c5d4 cxxbridge1$str$ptr + 2510724
+10  chromedriver                        0x000000010126e718 cxxbridge1$str$ptr + 2650312
+11  chromedriver                        0x000000010123dd7c cxxbridge1$str$ptr + 2451244
+12  chromedriver                        0x000000010128ddd4 cxxbridge1$str$ptr + 2779012
+13  chromedriver                        0x000000010128df54 cxxbridge1$str$ptr + 2779396
+14  chromedriver                        0x000000010129edec cxxbridge1$str$ptr + 2848668
+15  libsystem_pthread.dylib             0x0000000183237c0c _pthread_start + 136
+16  libsystem_pthread.dylib             0x0000000183232b80 thread_start + 8
+------------------------------------------------------------------------------
+User Login (false username) Web                                         
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase/web.robot:16
+    T:  User Login (false username) Web    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/testcase/web.robot:18
+      given Open OrangeHRM Web chromeless    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/setup/setup_web.robot:14
+      Open Browser    ${link}    ${browser_head_less}
+      |  ${link} = https://opensource-demo.orangehrmlive.com/web/index.php/auth/login (str)
+      |  ${browser_head_less} = headlesschrome (str)
+______________________________________________________________________________
+| FAIL |
+Execution terminated by signal
+------------------------------------------------------------------------------
+User Login (false password) Web                                       | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+Testcase.Web                                                          | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Testcase                                                              | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Output:  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/report/report-pdf/pabot_results/3/output.xml

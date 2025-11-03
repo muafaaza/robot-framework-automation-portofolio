@@ -1,0 +1,21 @@
+==============================================================================
+Testcase                                                                      
+==============================================================================
+Testcase.Android                                                              
+==============================================================================
+User Login Android                                                    | FAIL |
+MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1157a62d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+------------------------------------------------------------------------------
+User Login (false username) Android                                   | FAIL |
+MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x111c17c80>: Failed to establish a new connection: [Errno 61] Connection refused'))
+------------------------------------------------------------------------------
+User Login (false password) Android                                   | FAIL |
+MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1157a7950>: Failed to establish a new connection: [Errno 61] Connection refused'))
+------------------------------------------------------------------------------
+Testcase.Android                                                      | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Testcase                                                              | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Output:  /Users/muafailhamighazalah/desktop/robot-framework-automation-portofolio/robot-automation-login/report/report-pdf/pabot_results/0/output.xml
